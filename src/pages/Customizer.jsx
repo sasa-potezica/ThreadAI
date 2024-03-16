@@ -16,6 +16,15 @@ import {
 } from "../components";
 const Customizer = () => {
   const snap = useSnapshot(state);
+
+  const [file, setFile] = useState("");
+
+  const [prompt, setPrompt] = useState("");
+
+  const [generatingImg, setGeneratingImg] = useState(false);
+
+  const generateTabContent = () => {};
+
   return (
     <AnimatePresence>
       {!snap.intro && (
