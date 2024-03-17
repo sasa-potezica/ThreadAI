@@ -39,7 +39,7 @@ const Customizer = () => {
         return (
           <AIPicker
             prompt={prompt}
-            setPrompt={handlePrompt}
+            setPrompt={setPrompt}
             generatingImg={generatingImg}
             handleSubmit={handleSubmit}
           />
@@ -52,7 +52,7 @@ const Customizer = () => {
     if (!prompt) return alert("Please enter a prompt");
     try {
     } catch (error) {
-      allert(error);
+      alert(error);
     } finally {
       setGeneratingImg(false);
       setActiveEditorTab("");
